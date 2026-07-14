@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.labelRational {
+  color: var(--teal-blue);
+}
+
+.labelHuman {
+  color: var(--coral-red);
+}
+
+.meterTrack {
+  height: 16px;
+  background-color: var(--surface-color);
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.meterRational {
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, var(--teal-blue) 100%);
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.meterHuman {
+  height: 100%;
+  background: linear-gradient(90deg, var(--coral-red) 0%, rgba(255,120,120,1) 100%);
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 0 10px rgba(255, 90, 95, 0.4);
+}
+
+.centerMarker {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: 50%;
+  width: 4px;
+  background-color: var(--text-primary);
+  transform: translateX(-50%);
+  border-radius: 2px;
+  z-index: 2;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}

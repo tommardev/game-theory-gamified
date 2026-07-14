@@ -1,0 +1,88 @@
+.card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 100%;
+}
+
+.glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity var(--transition-medium);
+  pointer-events: none;
+}
+
+.card:hover .glow {
+  opacity: 1;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin: 0;
+  z-index: 1;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+  z-index: 1;
+}
+
+/* Neutral */
+.neutral:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.neutral .glow {
+  background: radial-gradient(circle at top right, rgba(255,255,255,0.05), transparent 70%);
+}
+
+/* Rational */
+.rational:hover, .rational.selected {
+  border-color: var(--teal-blue);
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+
+.rational .glow {
+  background: radial-gradient(circle at top right, rgba(0, 210, 211, 0.1), transparent 70%);
+}
+
+.rational .title {
+  color: var(--teal-blue);
+}
+
+/* Human */
+.human:hover, .human.selected {
+  border-color: var(--coral-red);
+  box-shadow: 0 4px 20px rgba(255, 90, 95, 0.2);
+}
+
+.human .glow {
+  background: radial-gradient(circle at top right, rgba(255, 90, 95, 0.15), transparent 70%);
+}
+
+.human .title {
+  color: var(--coral-red);
+}
+
+/* Selected State overrides */
+.selected {
+  background-color: rgba(255, 255, 255, 0.05);
+}

@@ -32,10 +32,10 @@ _Goal: Define the schema and get the state management working without worrying a
 
 _Goal: Build the reusable visual blocks that make the app feel gamified and premium._
 
-- [ ] Build `Button.tsx` (glowing, interactive).
-- [ ] Build `ChoiceCard.tsx` (large clickable cards with 3D hover effects).
-- [ ] Build `ScoreMeter.tsx` (the "Rational vs. Human" tug-of-war meter).
-- [ ] Test components in isolation on a temporary route.
+- [x] Build `Button.tsx` (glowing, interactive).
+- [x] Build `ChoiceCard.tsx` (large clickable cards with 3D hover effects).
+- [x] Build `ScoreMeter.tsx` (the "Rational vs. Human" tug-of-war meter).
+- [x] Test components in isolation on a temporary route.
 
 ## Pass 4: Page Assembly & Flow
 
