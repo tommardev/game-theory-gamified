@@ -10,4 +10,4 @@
 
 - [DONE] add more if there is some left, prefer from "Business and Economics" and "Social Systems" and **International Relations & Arms Races:**
 
-- Based on the [everyday_game_theory_interactive.md](file;file:///d%3A/Workplace/_Projects/game-theory-gamified/docs/everyday_game_theory_interactive.md) create a specs for a simple gamified interactive web page that can help a every day person to understand the game theory visually, and or step by step in a interactive manner. Output as a spec file with all the details, wireframes, user flow, and etc.
+- Based on the [everyday_game_theory_interactive.md](file;file:///d%3A/Workplace/_Projects/game-theory-gamified/docs/everyday_game_theory_interactive.md) create a specs, wireframes, user flow, and etc. for a web page app like gamified interactive app style web page that can help and entertain a every day person to understand and to learn some of the game theory visually, in a step by step manner. Output as a spec file with all the details, wireframes, user flow, and etc.

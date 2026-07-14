@@ -1,22 +1,36 @@
-# Game Theory Gamified
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A gamified exploration of game theory concepts and interactive simulations.
+## Getting Started
 
-This repository serves as a guide and interactive playground to help anyone—from students to everyday decision-makers—understand the fascinating mathematics behind cooperation, conflict, and strategy.
+First, run the development server:
 
-## 📚 Project Contents
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-This project includes research documentation and interactive guides to help break down game theory:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-*   **Core Theory & Research:**
-    *   [Game Theory: A Short-Mid Overview](docs/game_theory_research.md) — Fundamental definitions, key concepts (like Nash Equilibrium), and historic origins.
-    *   [Game Theory Research: Summary](docs/game_theory_research_summary.md) — Quick cheat sheet of foundational terms.
-*   **Real-World Application:**
-    *   [Game Theory: Real Life Associations and Examples](docs/game_theory_real_life_examples.md) — Real-world scenarios in business, daily interactions, and politics/international relations.
-    *   [Real Life Examples: Summary](docs/game_theory_real_life_examples_summary.md) — Summarized takeaways of real-world game theory.
-*   **Interactive Guide:**
-    *   [Game Theory for Everyone: Interactive Everyday Scenarios](docs/everyday_game_theory_interactive.md) — A choose-your-own-adventure style walkthrough of 13 everyday scenarios (e.g., splitting bills, price wars, sibling rivalry, traffic) mapped directly to game theory models.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 🚀 What's Next?
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-We are working on building a **gamified interactive web page** that implements these scenarios visually, allowing users to play through situations like the Prisoner's Dilemma, the Game of Chicken, and the Tragedy of the Commons in real-time.
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
