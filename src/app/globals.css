@@ -4,11 +4,11 @@
   --surface-color: rgba(20, 25, 40, 0.7);
   --text-primary: #ffffff;
   --text-secondary: #94a3b8;
-  
+
   --coral-red: #ff5a5f;
   --teal-blue: #00d2d3;
   --accent-glow: rgba(0, 210, 211, 0.4);
-  
+
   --spectrum-rational: var(--teal-blue);
   --spectrum-human: var(--coral-red);
 
@@ -20,7 +20,8 @@
   --transition-medium: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-html, body {
+html,
+body {
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
@@ -42,7 +43,12 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   letter-spacing: -0.02em;
 }

@@ -9,7 +9,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Everyday Game Theory",
-  description: "A gamified, interactive web app that helps everyday people understand and learn Game Theory concepts visually.",
+  description:
+    "A gamified, interactive web app that helps everyday people understand and learn Game Theory concepts visually.",
 };
 
 export default function RootLayout({
