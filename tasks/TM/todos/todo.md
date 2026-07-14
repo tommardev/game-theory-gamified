@@ -24,9 +24,9 @@ _Goal: Have a running Next.js app with our design system tokens configured._
 
 _Goal: Define the schema and get the state management working without worrying about final polish._
 
-- [ ] Create `data/scenarios.ts` and mock the JSON for "The Messy Kitchen Standoff".
-- [ ] Set up Zustand store (`store/gameStore.ts`) to track score spectrum ("Rational vs Human") and completed scenarios.
-- [ ] Verify state updates correctly via basic console logs or raw text output on a test page.
+- [x] Create `data/scenarios.ts` and mock the JSON for "The Messy Kitchen Standoff".
+- [x] Set up Zustand store (`store/gameStore.ts`) to track score spectrum ("Rational vs Human") and completed scenarios.
+- [x] Verify state updates correctly via basic console logs or raw text output on a test page.
 
 ## Pass 3: Core UI Components
 

@@ -13,3 +13,4 @@ Whenever you start a new session or are asked to resume work on this project, yo
 - **Incremental Implementation:** We build in vertical slices. Do not attempt to build the entire app at once. Complete one slice (e.g., initial setup, then one scenario), test it, and verify it works before moving to the next.
 - **Decision Tracking:** Any time a major technical decision is made (e.g., state management library, styling approach), document it as an ADR in `docs/decisions/`.
 - **Task Management:** Always update `tasks/TM/todos/todo.md` as work progresses. Use `[/]` for in-progress and `[x]` for completed tasks.
+- **Quality Assurance:** After completing any implementation pass or making significant code changes, run `npm run verify` (which runs formatting, linting, and build checks) to ensure the codebase remains clean and error-free.
