@@ -37,12 +37,24 @@ _Goal: Build the reusable visual blocks that make the app feel gamified and prem
 - [x] Build `ScoreMeter.tsx` (the "Rational vs. Human" tug-of-war meter).
 - [x] Test components in isolation on a temporary route.
 
-## Pass 4: Page Assembly & Flow
+## Pass 4.1: Landing Page
 
-_Goal: Wire everything together into a playable flow._
+_Goal: Create the entry point of the application._
 
 - [ ] Implement `app/page.tsx` (Landing Page with "Play Now").
+- [ ] Verify routing to `/map`.
+
+## Pass 4.2: Scenario Selection Map
+
+_Goal: Create the map where users select scenarios._
+
 - [ ] Implement `app/map/page.tsx` (Scenario Selection Map).
+- [ ] Display the ScoreMeter and available scenarios from data.
+
+## Pass 4.3: Interactive Scenario Flow
+
+_Goal: Implement the dynamic scenario page._
+
 - [ ] Implement `app/scenario/[id]/page.tsx` (The interactive setup, choices, and reveal breakdown).
 - [ ] Verify the full user journey from Landing Page -> Scenario -> Reveal -> Score Update -> Map.
 

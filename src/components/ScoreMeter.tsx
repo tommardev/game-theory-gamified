@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import styles from './ScoreMeter.module.css';
+import { motion } from "framer-motion";
+import styles from "./ScoreMeter.module.css";
 
 interface ScoreMeterProps {
   rationalScore: number;
@@ -18,25 +18,25 @@ export function ScoreMeter({ rationalScore, humanScore }: ScoreMeterProps) {
         <span className={styles.labelRational}>Rational Robot</span>
         <span className={styles.labelHuman}>Human Being</span>
       </div>
-      
+
       <div className={styles.meterTrack}>
-        <motion.div 
+        <motion.div
           className={styles.meterRational}
-          initial={{ width: '50%' }}
+          initial={{ width: "50%" }}
           animate={{ width: `${rationalPercentage}%` }}
-          transition={{ type: 'spring', stiffness: 60, damping: 15 }}
+          transition={{ type: "spring", stiffness: 60, damping: 15 }}
         />
-        <motion.div 
+        <motion.div
           className={styles.meterHuman}
-          initial={{ width: '50%' }}
+          initial={{ width: "50%" }}
           animate={{ width: `${humanPercentage}%` }}
-          transition={{ type: 'spring', stiffness: 60, damping: 15 }}
+          transition={{ type: "spring", stiffness: 60, damping: 15 }}
         />
-        
+
         {/* Center Indicator */}
         <div className={styles.centerMarker} />
       </div>
-      
+
       <div className={styles.scores}>
         <span className={styles.scoreRational}>{Math.round(rationalPercentage)}%</span>
         <span className={styles.scoreHuman}>{Math.round(humanPercentage)}%</span>

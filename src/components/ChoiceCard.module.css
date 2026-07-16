@@ -51,11 +51,12 @@
 }
 
 .neutral .glow {
-  background: radial-gradient(circle at top right, rgba(255,255,255,0.05), transparent 70%);
+  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.05), transparent 70%);
 }
 
 /* Rational */
-.rational:hover, .rational.selected {
+.rational:hover,
+.rational.selected {
   border-color: var(--color-rational);
   box-shadow: 0 4px 20px var(--accent-glow-rational);
 }
@@ -69,7 +70,8 @@
 }
 
 /* Human */
-.human:hover, .human.selected {
+.human:hover,
+.human.selected {
   border-color: var(--color-human);
   box-shadow: 0 4px 20px var(--accent-glow-human);
 }
