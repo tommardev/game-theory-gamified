@@ -13,6 +13,16 @@
   --spectrum-rational: var(--color-rational);
   --spectrum-human: var(--color-human);
 
+  /* Expanded Pale/Crayon Thematic Palette */
+  --color-theme-1: #e07a5f; /* Terra Cotta Red */
+  --color-theme-2: #81b29a; /* Sage Green */
+  --color-theme-3: #f2cc8f; /* Crayon Yellow */
+  --color-theme-4: #b5838d; /* Muted Mauve */
+  --color-theme-5: #a8dadc; /* Soft Cyan */
+  --color-theme-6: #e5989b; /* Soft Pink */
+  --color-theme-7: #457b9d; /* Muted Teal */
+  --color-theme-8: #d4a373; /* Sand */
+
   /* Glassmorphism borders */
   --glass-border: rgba(255, 255, 255, 0.1);
 

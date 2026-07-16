@@ -15,4 +15,6 @@ export interface Scenario {
   setup: string;
   choices: Choice[];
   breakdown: string;
+  iconName?: string;
+  accentColor?: string;
 }

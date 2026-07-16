@@ -41,15 +41,15 @@ _Goal: Build the reusable visual blocks that make the app feel gamified and prem
 
 _Goal: Create the entry point of the application._
 
-- [ ] Implement `app/page.tsx` (Landing Page with "Play Now").
-- [ ] Verify routing to `/map`.
+- [x] Implement `app/page.tsx` (Landing Page with "Play Now").
+- [x] Verify routing to `/map`.
 
 ## Pass 4.2: Scenario Selection Map
 
 _Goal: Create the map where users select scenarios._
 
-- [ ] Implement `app/map/page.tsx` (Scenario Selection Map).
-- [ ] Display the ScoreMeter and available scenarios from data.
+- [x] Implement `app/map/page.tsx` (Scenario Selection Map).
+- [x] Display the ScoreMeter and available scenarios from data.
 
 ## Pass 4.3: Interactive Scenario Flow
 

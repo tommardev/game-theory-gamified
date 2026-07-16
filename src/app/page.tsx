@@ -67,12 +67,14 @@ export default function Home() {
         >
           YOU&apos;RE PLAYING A GAME RIGHT NOW.
           <br />
-          <span style={{ 
-            background: "linear-gradient(90deg, var(--color-human), var(--color-rational))",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            display: "inline-block"
-          }}>
+          <span
+            style={{
+              background: "linear-gradient(90deg, var(--color-human), var(--color-rational))",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              display: "inline-block",
+            }}
+          >
             YOU JUST DON&apos;T KNOW IT.
           </span>
         </h2>
