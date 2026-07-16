@@ -17,11 +17,11 @@
 }
 
 .labelRational {
-  color: var(--teal-blue);
+  color: var(--color-rational);
 }
 
 .labelHuman {
-  color: var(--coral-red);
+  color: var(--color-human);
 }
 
 .meterTrack {
@@ -37,16 +37,16 @@
 
 .meterRational {
   height: 100%;
-  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, var(--teal-blue) 100%);
+  background: linear-gradient(90deg, #6275ae 0%, var(--color-rational) 100%);
   border-radius: 8px 0 0 8px;
-  box-shadow: 0 0 10px var(--accent-glow);
+  box-shadow: 0 0 10px var(--accent-glow-rational);
 }
 
 .meterHuman {
   height: 100%;
-  background: linear-gradient(90deg, var(--coral-red) 0%, rgba(255,120,120,1) 100%);
+  background: linear-gradient(90deg, var(--color-human) 0%, #c48642 100%);
   border-radius: 0 8px 8px 0;
-  box-shadow: 0 0 10px rgba(255, 90, 95, 0.4);
+  box-shadow: 0 0 10px var(--accent-glow-human);
 }
 
 .centerMarker {

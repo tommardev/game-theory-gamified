@@ -38,38 +38,39 @@
 
 /* Rational Variant */
 .rational {
-  background-color: rgba(0, 210, 211, 0.1);
-  color: var(--teal-blue);
-  border-color: rgba(0, 210, 211, 0.3);
+  background-color: #8292c41a;
+  color: var(--color-rational);
+  border-color: #8292c44d;
 }
 
 .rational:hover:not(:disabled) {
-  background-color: rgba(0, 210, 211, 0.2);
-  border-color: var(--teal-blue);
-  box-shadow: 0 0 15px var(--accent-glow);
+  background-color: #8292c433;
+  border-color: var(--color-rational);
+  box-shadow: 0 0 15px var(--accent-glow-rational);
 }
 
 /* Human Variant */
 .human {
-  background-color: rgba(255, 90, 95, 0.1);
-  color: var(--coral-red);
-  border-color: rgba(255, 90, 95, 0.3);
+  background-color: #e2a5631a;
+  color: var(--color-human);
+  border-color: #e2a5634d;
 }
 
 .human:hover:not(:disabled) {
-  background-color: rgba(255, 90, 95, 0.2);
-  border-color: var(--coral-red);
-  box-shadow: 0 0 15px rgba(255, 90, 95, 0.4);
+  background-color: #e2a56333;
+  border-color: var(--color-human);
+  box-shadow: 0 0 15px var(--accent-glow-human);
 }
 
 /* Secondary Variant */
 .secondary {
   background: transparent;
   color: var(--text-secondary);
-  border-color: transparent;
+  border-color: var(--glass-border);
 }
 
 .secondary:hover:not(:disabled) {
   color: var(--text-primary);
   background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
 }

@@ -1,3 +1,3 @@
 # Active Tasks
 
-(No active tasks. Pass 3 completed.)
+(No active tasks.)

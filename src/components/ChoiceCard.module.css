@@ -56,30 +56,30 @@
 
 /* Rational */
 .rational:hover, .rational.selected {
-  border-color: var(--teal-blue);
-  box-shadow: 0 4px 20px var(--accent-glow);
+  border-color: var(--color-rational);
+  box-shadow: 0 4px 20px var(--accent-glow-rational);
 }
 
 .rational .glow {
-  background: radial-gradient(circle at top right, rgba(0, 210, 211, 0.1), transparent 70%);
+  background: radial-gradient(circle at top right, #8292c41a, transparent 70%);
 }
 
 .rational .title {
-  color: var(--teal-blue);
+  color: var(--color-rational);
 }
 
 /* Human */
 .human:hover, .human.selected {
-  border-color: var(--coral-red);
-  box-shadow: 0 4px 20px rgba(255, 90, 95, 0.2);
+  border-color: var(--color-human);
+  box-shadow: 0 4px 20px var(--accent-glow-human);
 }
 
 .human .glow {
-  background: radial-gradient(circle at top right, rgba(255, 90, 95, 0.15), transparent 70%);
+  background: radial-gradient(circle at top right, #e2a56326, transparent 70%);
 }
 
 .human .title {
-  color: var(--coral-red);
+  color: var(--color-human);
 }
 
 /* Selected State overrides */
