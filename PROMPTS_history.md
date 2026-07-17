@@ -26,3 +26,5 @@
 - the overall it looks too simple not polished, it doesnt look engaging or enternatining nor modern premium styling, and doesnt meet project idea
 
 // - we need a global design system for colors, fonts, spacing, shadows, animations, button styles, card styles, and etc. so that our project looks consistent, premium, modern, engaging, and fun
+
+- [DONE] take as much good lessons from our other project [lessons.md](file;file:///d%3A/Workplace/_Projects/game-theory-gamified/public/lessons.md) and add to our [lessons.md](file;file:///d%3A/Workplace/_Projects/game-theory-gamified/tasks/TM/core/lessons.md) but make this our lessons "global as possible so any other project we would move this file to get the same reasonable lessons no matter what language they use" so we can prot it to any other project with ease - do not do automatic actions do not commit do not push etc.
