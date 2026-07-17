@@ -7,10 +7,12 @@ interface ScoreMeterProps {
 }
 
 export function ScoreMeter({ rationalScore, humanScore }: ScoreMeterProps) {
-  // Smooth tug-of-war formula based on a max possible difference of 130 points
+  // We calculate the net difference. Max possible difference is roughly 130 points.
   const scoreDifference = rationalScore - humanScore;
-  const rationalPercentage = Math.max(0, Math.min(100, 50 + (scoreDifference / 130) * 50));
-  const humanPercentage = 100 - rationalPercentage;
+  const isRationalWinning = scoreDifference >= 0;
+  
+  // Percentage is based on the absolute difference (0 to 100% of the half-track)
+  const percentage = Math.min(100, (Math.abs(scoreDifference) / 130) * 100);
 
   return (
     <div className={styles.container}>
@@ -19,22 +21,29 @@ export function ScoreMeter({ rationalScore, humanScore }: ScoreMeterProps) {
         <span className={styles.labelHuman}>Human Being</span>
       </div>
 
-      <div className={styles.meterTrack}>
-        <motion.div
-          className={styles.meterRational}
-          initial={{ width: "50%" }}
-          animate={{ width: `${rationalPercentage}%` }}
-          transition={{ type: "spring", stiffness: 60, damping: 15 }}
-        />
-        <motion.div
-          className={styles.meterHuman}
-          initial={{ width: "50%" }}
-          animate={{ width: `${humanPercentage}%` }}
-          transition={{ type: "spring", stiffness: 60, damping: 15 }}
-        />
+      <div className={styles.trackContainer}>
+        {/* Left Half (Rational) */}
+        <div className={styles.leftHalf}>
+          <motion.div
+            className={styles.fillRational}
+            initial={{ width: "0%" }}
+            animate={{ width: isRationalWinning ? `${percentage}%` : "0%" }}
+            transition={{ type: "spring", stiffness: 60, damping: 15 }}
+          />
+        </div>
 
         {/* Center Indicator */}
         <div className={styles.centerMarker} />
+        
+        {/* Right Half (Human) */}
+        <div className={styles.rightHalf}>
+          <motion.div
+            className={styles.fillHuman}
+            initial={{ width: "0%" }}
+            animate={{ width: !isRationalWinning && scoreDifference !== 0 ? `${percentage}%` : "0%" }}
+            transition={{ type: "spring", stiffness: 60, damping: 15 }}
+          />
+        </div>
       </div>
 
       <div className={styles.scores}>

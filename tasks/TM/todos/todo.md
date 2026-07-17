@@ -1,5 +1,7 @@
 # Active Tasks
 
+- [x] Tweak: Implement "Fill from Center" UX for ScoreMeter
+- [x] Tweak: Redesign ScoreMeter UX/UI to make the "Rational Robot / Human Being" scale more understandable
 - [x] Tweak: Add "MAKE A CHOICE" cue to ChoiceCards and enforce uniform grid sizing
 - [x] Tweak: Smooth ScoreMeter lean calculation (true tug-of-war logic)
 - [x] Tweak: Change ScoreMeter labels from % to PTS
