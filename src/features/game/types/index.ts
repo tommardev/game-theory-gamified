@@ -1,4 +1,4 @@
-export type SpectrumShift = "rational" | "human" | "neutral";
+import { SpectrumShift } from "../../../shared/types";
 
 export interface Choice {
   id: string;

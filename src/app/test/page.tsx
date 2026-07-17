@@ -1,7 +1,7 @@
 "use client";
 
-import { useGameStore } from "../../store/gameStore";
-import { scenarios } from "../../data/scenarios";
+import { useGameStore } from "../../features/game/store/gameStore";
+import { scenarios } from "../../features/game/data/scenarios";
 
 export default function TestPage() {
   const {

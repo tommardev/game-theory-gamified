@@ -2,11 +2,11 @@
 
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { Button } from "../../components/Button";
-import { ScoreMeter } from "../../components/ScoreMeter";
-import { useGameStore } from "../../store/gameStore";
-import { scenarios } from "../../data/scenarios";
-import { getIconByName } from "../../components/icons/ScenarioIcons";
+import { Button } from "../../shared/ui/Button";
+import { ScoreMeter } from "../../shared/ui/ScoreMeter";
+import { useGameStore } from "../../features/game/store/gameStore";
+import { scenarios } from "../../features/game/data/scenarios";
+import { getIconByName } from "../../features/game/components/icons/ScenarioIcons";
 
 export default function MapPage() {
   const router = useRouter();

@@ -1,10 +1,11 @@
 import { create } from "zustand";
+import { SpectrumShift } from "../../../shared/types";
 
 interface GameState {
   rationalScore: number;
   humanScore: number;
   completedScenarios: string[];
-  addScore: (shift: "rational" | "human" | "neutral", amount?: number) => void;
+  addScore: (shift: SpectrumShift, amount?: number) => void;
   markScenarioCompleted: (scenarioId: string) => void;
   resetGame: () => void;
 }

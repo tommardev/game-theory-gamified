@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/Button";
-import { ChoiceCard } from "@/components/ChoiceCard";
-import { ScoreMeter } from "@/components/ScoreMeter";
+import { Button } from "@/shared/ui/Button";
+import { ChoiceCard } from "@/features/game/components/ChoiceCard";
+import { ScoreMeter } from "@/shared/ui/ScoreMeter";
 
 export default function TestUIPage() {
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
