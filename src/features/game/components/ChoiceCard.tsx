@@ -31,6 +31,11 @@ export function ChoiceCard({
       <div className={styles.glow} />
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
+
+      {!selected && variant === "neutral" && (
+        <div className={styles.selectCue}>MAKE A CHOICE ➔</div>
+      )}
+      {selected && <div className={styles.selectedCue}>✓ SELECTED</div>}
     </motion.div>
   );
 }

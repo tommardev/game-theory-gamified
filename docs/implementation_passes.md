@@ -55,14 +55,14 @@ _Goal: Create the map where users select scenarios._
 
 _Goal: Implement the dynamic scenario page._
 
-- [ ] Implement `app/scenario/[id]/page.tsx` (The interactive setup, choices, and reveal breakdown).
-- [ ] Verify the full user journey from Landing Page -> Scenario -> Reveal -> Score Update -> Map.
+- [x] Implement `app/scenario/[id]/page.tsx` (The interactive setup, choices, and reveal breakdown).
+- [x] Verify the full user journey from Landing Page -> Scenario -> Reveal -> Score Update -> Map.
 
 ## Pass 5: Polish & Animations
 
 _Goal: Add the "WOW" factor._
 
-- [ ] Integrate Framer Motion for smooth page transitions.
-- [ ] Animate the Choice Cards on hover.
-- [ ] Animate the ScoreMeter tug-of-war effect.
-- [ ] Final visual QA for accessibility and contrast.
+- [x] Integrate Framer Motion for smooth page transitions.
+- [x] Animate the Choice Cards on hover.
+- [x] Animate the ScoreMeter tug-of-war effect.
+- [x] Final visual QA for accessibility and contrast.

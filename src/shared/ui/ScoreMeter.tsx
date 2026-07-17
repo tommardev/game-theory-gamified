@@ -7,10 +7,10 @@ interface ScoreMeterProps {
 }
 
 export function ScoreMeter({ rationalScore, humanScore }: ScoreMeterProps) {
-  const total = rationalScore + humanScore;
-  // Prevent division by zero; default to 50/50 if both are 0
-  const rationalPercentage = total === 0 ? 50 : (rationalScore / total) * 100;
-  const humanPercentage = total === 0 ? 50 : (humanScore / total) * 100;
+  // Smooth tug-of-war formula based on a max possible difference of 130 points
+  const scoreDifference = rationalScore - humanScore;
+  const rationalPercentage = Math.max(0, Math.min(100, 50 + (scoreDifference / 130) * 50));
+  const humanPercentage = 100 - rationalPercentage;
 
   return (
     <div className={styles.container}>
@@ -38,8 +38,8 @@ export function ScoreMeter({ rationalScore, humanScore }: ScoreMeterProps) {
       </div>
 
       <div className={styles.scores}>
-        <span className={styles.scoreRational}>{Math.round(rationalPercentage)}%</span>
-        <span className={styles.scoreHuman}>{Math.round(humanPercentage)}%</span>
+        <span className={styles.scoreRational}>{rationalScore} PTS</span>
+        <span className={styles.scoreHuman}>{humanScore} PTS</span>
       </div>
     </div>
   );

@@ -7,9 +7,20 @@ Add generalized lessons here as `symptom → cause → fix`. Do not append to th
 ## Index (jump)
 
 - [Architecture & Next.js Routing](#architecture--nextjs-routing)
+- [Workflow & Verification](#workflow--verification)
 
 ## Architecture & Next.js Routing
 
 - **Symptom:** Next.js throws a 404 for the root page and a missing root layout error for a new test page, despite `src/app` existing.
   - **Cause:** Placing new pages in a root `app/` folder (e.g. `app/test/page.tsx`) overrides the existing `src/app/` folder in Next.js, causing all routes in `src/` to be ignored.
   - **Fix:** Always place new pages and layouts inside the existing `src/app/` directory (e.g. `src/app/test/page.tsx`) when the project uses the `src` directory convention.
+
+- **Symptom:** Dynamic routes throw a runtime error in the browser: `A param property was accessed directly with params.id. params is a Promise and must be unwrapped`.
+  - **Cause:** In Next.js 15+ (and Next.js 14 canary/15 beta), `params` and `searchParams` passed to pages/layouts are now Promises. Destructuring them directly (e.g. `const { id } = params`) is a synchronous violation.
+  - **Fix:** Unwrap the `params` promise using `React.use()` before accessing its properties (e.g., `const { id } = use(params)`).
+
+## Workflow & Verification
+
+- **Symptom:** An implementation pass is marked as completed in the roadmap, but the feature actually crashes in the browser (e.g., "Scenario not found" due to a runtime error).
+  - **Cause:** Assuming a successful build or linter pass implies functional correctness. `npm run verify` catches build/type errors, but not all runtime errors.
+  - **Fix:** Always verify the actual functional behavior by reading the terminal output of the running development server (`npm run dev`), checking browser console logs, or using DevTools testing before checking off a pass.

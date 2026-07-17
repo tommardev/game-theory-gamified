@@ -1,20 +1,27 @@
 .button {
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 1rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-xl);
+  font-family: var(--font-heading), sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
   cursor: pointer;
   border: 1px solid transparent;
   outline: none;
   transition:
-    box-shadow var(--transition-fast),
-    border-color var(--transition-fast);
+    box-shadow var(--transition-medium),
+    border-color var(--transition-medium),
+    background-color var(--transition-medium),
+    transform var(--transition-fast);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  letter-spacing: 0.05em;
+}
+
+.button:active {
+  transform: scale(0.97);
 }
 
 .fullWidth {
@@ -24,6 +31,7 @@
 .button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+  transform: none;
 }
 
 /* Primary Variant (Default) */
@@ -31,11 +39,13 @@
   background-color: var(--surface-color);
   color: var(--text-primary);
   border-color: var(--glass-border);
+  box-shadow: var(--shadow-sm);
 }
 
 .primary:hover:not(:disabled) {
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--surface-color-hover);
+  border-color: var(--glass-border-highlight);
+  box-shadow: var(--shadow-md);
 }
 
 /* Rational Variant */
@@ -48,7 +58,7 @@
 .rational:hover:not(:disabled) {
   background-color: #8292c433;
   border-color: var(--color-rational);
-  box-shadow: 0 0 15px var(--accent-glow-rational);
+  box-shadow: var(--shadow-glow-rational);
 }
 
 /* Human Variant */
@@ -61,7 +71,7 @@
 .human:hover:not(:disabled) {
   background-color: #e2a56333;
   border-color: var(--color-human);
-  box-shadow: 0 0 15px var(--accent-glow-human);
+  box-shadow: var(--shadow-glow-human);
 }
 
 /* Secondary Variant */
@@ -74,5 +84,5 @@
 .secondary:hover:not(:disabled) {
   color: var(--text-primary);
   background-color: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--glass-border-highlight);
 }

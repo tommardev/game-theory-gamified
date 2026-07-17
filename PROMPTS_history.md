@@ -20,3 +20,9 @@
   - [DONE] we should increase our project version by points on how ew look now with project, as we are now in progress and have something done
 
 - implement proceed with next reasonable pass //Pass 2
+
+- [DONE] first "tech" project to avoid this what happened (with a rule or a skill or skills set prioritized to use) that a implementation phase is not working and update so later this not happen: the problem that the opening scenario we have a problem we see only "Scenario not found" the more detailed errors visible at [dev](terminal;19988)
+
+- the overall it looks too simple not polished, it doesnt look engaging or enternatining nor modern premium styling, and doesnt meet project idea
+
+// - we need a global design system for colors, fonts, spacing, shadows, animations, button styles, card styles, and etc. so that our project looks consistent, premium, modern, engaging, and fun
