@@ -28,3 +28,15 @@
 // - we need a global design system for colors, fonts, spacing, shadows, animations, button styles, card styles, and etc. so that our project looks consistent, premium, modern, engaging, and fun
 
 - [DONE] take as much good lessons from our other project [lessons.md](file;file:///d%3A/Workplace/_Projects/game-theory-gamified/public/lessons.md) and add to our [lessons.md](file;file:///d%3A/Workplace/_Projects/game-theory-gamified/tasks/TM/core/lessons.md) but make this our lessons "global as possible so any other project we would move this file to get the same reasonable lessons no matter what language they use" so we can prot it to any other project with ease - do not do automatic actions do not commit do not push etc.
+
+- using our [docs/specs/v2_premium_expansion.md](file;file:///d%3A/Workplace/_Projects/game-theory-gamified/docs/specs/v2_premium_expansion.md) create detailed technical documentation that includes the following sections
+- **Project Overview:** High-level summary of the project goals and architecture.
+- **Tech Stack & Project Setup:** List of dependencies and configuration files (Tailwind, Framer Motion, Zustand).
+- **Component Breakdown:** Detailed interface specifications for `ScrollerLayout`, `HeroSection`, `InteractiveSection`, `GameScroller`, and `StatsModal`.
+- **State Management:** Architecture for the `useGameStore`.
+- **Data Layer:** Details of the global stats implementation (local file-based DB).
+- **Commands:** Instructions for building, verifying, and running the project.
+
+Your output should be a well-structured Markdown document ready to serve as the technical anchor for the implementation pass. Do not execute any commands or modify files.
+
+- proceed with the next reasonable implementation pass - do not do automatic actions do not commit do not push etc.

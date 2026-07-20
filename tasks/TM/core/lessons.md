@@ -27,7 +27,7 @@ This file contains generalized, language-agnostic software engineering heuristic
 - **Symptom:** UI state updates trigger infinite loops or race conditions where data gets out of sync.
   - **Cause:** Triggering side effects (like updating another piece of state or firing an API request) synchronously inside a derived-state listener or selector.
   - **Fix:** Keep derived-state selectors (e.g., computed properties) strictly pure and free of side effects. Handle downstream updates via one-way command dispatching or asynchronous hooks.
-  
+
 - **Symptom:** State logic is scattered across multiple components, causing rendering inconsistency.
   - **Cause:** Duplicating local state for data that has a single source of truth.
   - **Fix:** Consolidate shared state into a unified store (e.g., global state or context) and subscribe components to read-only views of this single source of truth.
